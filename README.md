@@ -7,7 +7,7 @@ Simple http proxy server implemented using deno.
 ### Install
 
 ```sh
-deno install 
+deno install --allow-read --allow-net -n regali https://raw.githubusercontent.com/Octo8080/regali/main/cli.ts
 ```
 
 ### Preparation config
@@ -45,11 +45,20 @@ If you write as above, it will be processed as follows.
 ### Execute
 
 ```sh 
+# Use defualt config file `proxy_config.json`
+# Use defualt port `8080`
+
 regali 
+
+# Use custom config file
+regali --config=custom_proxy_config.json
+
+# Use  port `8081`
+regali --port=8081
 ```
 
 ### No Install execute
 
 ```sh
-deno run 
+deno run --allow-read --allow-net https://raw.githubusercontent.com/Octo8080/regali/main/cli.ts 
 ```
