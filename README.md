@@ -47,7 +47,6 @@ If you write as above, it will be processed as follows.
 ```sh 
 # Use defualt config file `proxy_config.json`
 # Use defualt port `8080`
-
 regali 
 
 # Use custom config file
