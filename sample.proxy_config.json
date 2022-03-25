@@ -1,0 +1,14 @@
+{
+  "/a/": {
+    "target": "http://0.0.0.0:80",
+    "replace": true
+  },
+  "/b/": {
+    "target": "http://0.0.0.0:81",
+    "replace": true
+  },
+  "/": {
+    "target": "http://0.0.0.0:80",
+    "replace": true
+  }
+}
